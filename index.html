@@ -5,60 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-Hypertext Markup Language</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="script.js"></script>
-<style>
-    html{
-        background-color: rgb(24,48,48);
-        color: aqua;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    html a{
-        color: aqua;
-        text-decoration: none;
-    }
-    .list table{
-        background-color: black;
-        width: 100%;
-        text-align: center;
-    }
-    .list table tr td,th{
-        border: 1px solid cyan;
-        font-size: larger;
-        padding: 1%;
-    }
-    header{
-        padding: 1%;
-        text-align: center;
-        font-size: xx-large;
-        border: 2px solid red;
-        border-radius: 25px;
-    }
-    .intro{
-        color: aqua;
-        background-color: black;
-        border: 1px solid red;
-        padding: 1%;
-        margin: 1%;
-    }
-    .intro h2,h3,h4{
-        color: yellow;
-    }
-    h1{
-        display: block;
-        background-color: black;
-        padding: 1.5%;
-        border: 1px solid white;
-        border-radius: 25px;
-    }
-    a:hover{
-        background-color: yellow;
-        color: black;
-    }
-</style>
 <body>
     <header>
-        Welcome Mr.Abid 
+        Welcome Mr.Stark 
     </header>
     <div class="intro">
         <h2>Introduction to HTML:</h2>
@@ -91,6 +43,9 @@
         List of all HTML tags
     </header>
     <div class="list">
+        <div class="tbtn">
+            <button id="tbtn" onclick="t()">Show all</button>
+        </div>
         <h1 class="tags-other" onclick="display('.t-others')">Tags-Others:</h1>
         <table class="t-others">
             <tr><th>Tag</th><th>Description</th></tr>

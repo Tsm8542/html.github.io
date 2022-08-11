@@ -1,0 +1,64 @@
+html{
+    background-color: rgb(24,48,48);
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html a{
+    color: aqua;
+    text-decoration: none;
+}
+.list table{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+.list table tr td,th{
+    border: 1px solid cyan;
+    font-size: larger;
+    padding: 1%;
+}
+header{
+    padding: 1%;
+    text-align: center;
+    font-size: xx-large;
+    border: 2px solid red;
+    border-radius: 25px;
+}
+.intro{
+    color: aqua;
+    background-color: black;
+    border: 1px solid red;
+    padding: 1%;
+    margin: 1%;
+}
+.intro h2,h3,h4{
+    color: yellow;
+}
+h1{
+    display: block;
+    background-color: black;
+    padding: 1.5%;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+a:hover{
+    background-color: yellow;
+    color: black;
+}
+.tbtn{
+    padding: 1%;
+    padding-bottom: 0;
+}
+#tbtn{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20%;
+    height: 25px;
+    font-size: larger;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
