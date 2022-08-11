@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;canvas&gt;</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="header">
+        <header>
+            &lt;canvas&gt;
+        </header>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="code">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;
+    &lt;canvas id="myCanvas"&gt;
+        (Canvas needs javascript to work)
+        Your browser does not support the canvas tag.
+    &lt;/canvas&gt;
+    &lt;script&gt;
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 100);
+    &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+                </td>
+                <td class="output">
+                    <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.fillStyle = "#FF0000";
+                        ctx.fillRect(0, 0, 80, 100);
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

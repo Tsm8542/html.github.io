@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;template&gt;</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="header">
+        <header>
+            &lt;template&gt;
+        </header>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="code">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;
+        &lt;button onclick="t()"&gt;Click&lt;/button&gt;
+        &lt;template&gt;
+            Hidden content in template
+        &lt;/template&gt;
+        &lt;script&gt;
+            function t(){
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                let x = document.querySelector("template");
+                x.appendChild(clon);
+                x.style.display="block";
+            }
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+                </td>
+                <td class="output">
+                    <button onclick="t()">Click</button>
+                    <template>
+                        Hidden content in template
+                    </template>
+                    <script>
+                        function t(){
+                            var temp = document.getElementsByTagName("template")[0];
+                            var clon = temp.content.cloneNode(true);
+                            let x = document.querySelector("template");
+                            x.appendChild(clon);
+                            x.style.display="block";
+                        }
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

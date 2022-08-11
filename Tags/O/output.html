@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;output&gt;</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="header">
+        <header>
+            &lt;output&gt;
+        </header>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="code">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;
+        &lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+            &lt;input type="range" id="a" value="50"&gt;
+            +&lt;input type="number" id="b" value="25"&gt;
+            =&lt;output name="x" for="a b"&gt;&lt;/output&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+                </td>
+                <td class="output">
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                        <input type="number" id="a" value="50">
+                        +<input type="number" id="b" value="25">
+                        =<output name="x" for="a b"></output>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+html{
+    background-color: rgb(24,48,48);
+}
+.header{
+    color: aqua;
+    text-align: center;
+    font-size: xx-large;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 1%;
+}
+.container>table{
+    width: 100%;
+    padding: 1%;
+}
+.output{
+    vertical-align: top;
+    background-color: white;
+    width: 50%;
+    border: 3px solid mediumvioletred;
+    padding: 1%;
+}
+.code{
+    color: rgb(0,255,0);
+    background-color: black;
+    width: 50%;
+    border: 3px solid red;
+    padding: 1%;
+}
